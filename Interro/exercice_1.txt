@@ -1,0 +1,57 @@
+SOLUTION
+
+I
+
+1/  'cd'
+
+2/ ERROR
+
+3/ 'toto bcdef'
+
+4/ 'abcdefabcedf'
+
+5/ 'abdef'
+
+=================
+
+II
+
+1/ 'cd'
+
+2/ ERROR
+
+3/ 'toto bcdef'
+
+4/ 'abcdefabcdef'
+
+5/ ERROR
+
+
+================================================
+
+CORRECTION
+
+I
+
+1/ ('c','d')
+
+2/ Une erreur de type TypeError. (Car les tuples sont immuables)
+
+3/ ('toto',) + ('b','c','d','e','f') => ('toto','b','c','d','e','f')
+
+4/ On affiche le tuple deux fois
+
+5/ Une erreur de type TypeError
+
+======================
+II. Faire la même chose mais ici, la variable t est une liste mais avec les mêmes valeures
+
+1/ ['c','d']
+
+2/ ['a', 'x', 'y', 'd', 'e', 'f'].  Il y a eu decomposition de ('x','y') puis remplacement
+
+3/ Une erreur de type TypeErrror
+
+4/ ['a', 'x', 'y', 'd', 'e', 'f','a', 'x', 'y', 'd', 'e', 'f']
+
+5/ ['a', 'x', 'd', 'e', 'f']
